@@ -1,20 +1,21 @@
 #include<iostream>  
 using namespace std;
 
-void InputData();
-
 int main(){
-    double * Array; //point to the location of array
+    //key in number of data, input data
+    double * Array; //point to the location of array, double as storing double numbers
     cout<<"Enter number of Data: ";
     int Size =0;
     cin >> Size;
     Array = new double[Size];
     for(int i = 0; i < Size; i++){
         cin >> Array[i];}
+
     //  print array elements
     cout << "The data are: ";
     for (int n = 0; n < Size; ++n) {
     cout << Array[n] << "  "; }
+
     // sorting algorithm
     int a,b,c;
     double temp;
@@ -27,6 +28,8 @@ int main(){
                  } 
             }
          }
+
+    //prints out sorted element list
     cout <<"/nSorted Element List ...\n";
     for(c = 0; c<Size; c++) {
     cout <<Array[c]<<"\t";
@@ -34,19 +37,8 @@ int main(){
     return 0; 
     }
 
-void InputData(){
-    double * Array; //point to the location of array
-    cout<<"Enter number of Data: ";
-    int Size =0;
-    cin >> Size;
-    Array = new double[Size];
-    for(int i = 0; i < Size; i++){
-        cin >> Array[i];}
-    //  print array elements
-    cout << "The data are: ";
-    for (int n = 0; n < Size; ++n) {
-    cout << Array[n] << "  "; }
-};
+
+
 
 
 
