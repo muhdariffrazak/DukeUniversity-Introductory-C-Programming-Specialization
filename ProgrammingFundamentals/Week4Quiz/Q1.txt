@@ -1,0 +1,6 @@
+Pseudocode for Q1 week 4 quiz
+
+count from 0 to N-2, (call it a)
+ count from a+1 to N-1, (call it b)
+  if value at a is bigger than value at b,
+   switch the values of a & b

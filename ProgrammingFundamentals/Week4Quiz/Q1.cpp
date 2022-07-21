@@ -1,4 +1,4 @@
-#include<iostream>  
+#include<iostream> 
 using namespace std;
 
 int main(){
@@ -19,7 +19,7 @@ int main(){
     // sorting algorithm
     int a,b,c;
     double temp;
-    for(a=0;a < Size;a++){
+    for(a=0;a < Size-1;a++){
         for(b=a+1;b< Size; b++){
             if(Array[a] > Array[b]) {
                  temp = Array[b];
@@ -30,7 +30,7 @@ int main(){
          }
 
     //prints out sorted element list
-    cout <<"/nSorted Element List ...\n";
+    cout <<"\nSorted Element List ...\n";
     for(c = 0; c<Size; c++) {
     cout <<Array[c]<<"\t";
     }
